@@ -18,19 +18,30 @@ function obtenerListaDeSuperheroes() {
     return superheroes
 }
 
-function buscarSuperhereoPorAtributo(atributo, valor) {
+function buscarSuperheroePorAtributo(atributo, valor) {
     const superheroes = repository.obtenerTodos();
 
-    return superheroes.filter(hero => String(hero[atributo]).toLowerCase().includes(valor.toLowerCase()))
+    return superheroes.filter(hero => 
+        String(hero[atributo]).toLowerCase().includes(valor.toLowerCase())
+    );
 }
 
+
+
 function obteneerSuperheroeMayorA30() {
-    
+    const superheroes = repository.obtenerTodos();
+
+    const edad = 30;
+    const planetaOrigen = 'Tierra';
+    const poderesMinimo = 2;
+    const filtrados = superheroes.filter(hero => hero.edad > edad && hero.planetaOrigen === planetaOrigen && hero.poder.length>=poderesMinimo);
+
+    return filtrados;
 }
 
 export {
         obtenerSuperheroesPorId,
         obtenerListaDeSuperheroes,
-        buscarSuperhereoPorAtributo, 
+        buscarSuperheroePorAtributo, 
         obteneerSuperheroeMayorA30
     }

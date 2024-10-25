@@ -3,8 +3,8 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import SuperheroeDataSource from './superheroeDataSource.mjs';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.basename(__filename);
+const __filename = fileURLToPath(import.meta.url); //toda url completa (D:documentos/..)
+const __dirname = path.basename(__filename); //obtine el último nivel (superheroeRepository.mjs) 
 
 console.log("FILENAME: ",__filename);
 console.log("DIRNAME: ",__dirname);

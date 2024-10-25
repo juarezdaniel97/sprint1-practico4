@@ -20,9 +20,11 @@ const PORT = 3005;
 
 app.get('/', homeController);
 app.get('/superheroes', obtenerListaDeSuperheroesController);
-app.get('/superheroes/id/:id', obtenerSuperheroePorIdController)
-app.get('/superheroes/atributo/:atributo/:valor',buscarSuperheroePorAtributoController)
-app.get('/superheroes/edad/mayorA30',obenerSuperheroeMayorA30Controller)
+app.get('/superheroes/id/:id', obtenerSuperheroePorIdController);
+app.get('/superheroes/atributo/:atributo/:valor',buscarSuperheroePorAtributoController);
+app.get('/superheroes/edad/mayorA30', obenerSuperheroeMayorA30Controller);
+
+
 
 app.listen(PORT, ()=>{
     console.log(`El servidor se está ejecutando en http://localhost:${PORT}`);

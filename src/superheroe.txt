@@ -4,7 +4,7 @@
     "nombreSuperheroe": "Spiderman",
     "nombreReal": "Peter Parker",
     "nombreSociedad": "Vigilante",
-    "edad": 25,
+    "edad": 31,
     "planetaOrigen": "Tierra",
     "debilidad": "Radioactiva",
     "poder": [
@@ -61,6 +61,27 @@
     ],
     "enemigo": [
       "Hela"
+    ]
+  },
+  {
+    "id": 4,
+    "nombreSuperheroe": "pepe",
+    "nombreReal": "pepe pepe",
+    "nombreSociedad": "Dios del Trueno",
+    "edad": 28,
+    "planetaOrigen": "Asgard",
+    "debilidad": "Destruir su martillo",
+    "poder": [
+      "Controlar el trueno",
+      "Fuerza sobrehumana",
+      "Inmortal"
+    ],
+    "habilidadEspecial": "pepe",
+    "aliado": [
+      "Loki"
+    ],
+    "enemigo": [
+      "pepe"
     ]
   }
 ]
