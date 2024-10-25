@@ -3,12 +3,14 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import SuperheroeDataSource from './superheroeDataSource.mjs';
 
-
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.basename(__filename);
 
+console.log("FILENAME: ",__filename);
+console.log("DIRNAME: ",__dirname);
 
-export default class SuperheroeRepository extends SuperheroeRepository{
+
+export default class SuperheroeFileRepository extends SuperheroeDataSource{
 
     constructor(){
         super();
